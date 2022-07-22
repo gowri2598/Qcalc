@@ -13,9 +13,14 @@ public class QcalcApplication {
 		
 		StandardCalculator calc = new StandardCalculator();
 
-		calc.add(1.5, 2.5);
+		calc.add(Double.MAX_VALUE, Double.MAX_VALUE);
+		//calc.add(Double.MAX_VALUE, 1.0);
+		//calc.subtract(-Double.MAX_VALUE, Double.MAX_VALUE);
+
+		calc.printResult();
 
 
+		//System.out.println(Double.MAX_VALUE);
 		System.out.println(calc.getResult());
 
 	}
