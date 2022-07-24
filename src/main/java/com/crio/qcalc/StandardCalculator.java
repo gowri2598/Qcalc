@@ -6,7 +6,7 @@ public static void getVersion() {
     System.out.println("Standard Calculator 1.0");
 }
 
-private double result;
+protected double result;
 
 public double getResult() {
     return result;
@@ -24,35 +24,35 @@ public void clearResult() {
 
 }
 
-public void add(int num1, int num2) {
+public final void add(int num1, int num2) {
 
     add((double) num1, (double) num2);
 
 
 }
 
-public void subtract(int num1, int num2) {
+public final void subtract(int num1, int num2) {
 
     subtract((double) num1, (double) num2);
 
 }
 
 
-public void multiply(int num1, int num2) {
+public final void multiply(int num1, int num2) {
 
     multiply((double) num1, (double) num2);
 
 }
 
 
-public void divide(int num1, int num2) {
+public final void divide(int num1, int num2) {
 
     divide((double) num1, (double) num2);
 
 }
 
 
-public void add(double num1, double num2) {
+public final void add(double num1, double num2) {
 
     double result = num1 + num2;
 
@@ -67,7 +67,7 @@ public void add(double num1, double num2) {
 }
 
 
-public void subtract(double num1, double num2) {
+public final void subtract(double num1, double num2) {
 
     double result = num1 - num2;
 
@@ -82,13 +82,13 @@ public void subtract(double num1, double num2) {
 }
 
 
-public void multiply(double num1, double num2) {
+public final void multiply(double num1, double num2) {
     
     result = num1 * num2;
     
 }
 
-public void divide(double num1, double num2) {
+public final void divide(double num1, double num2) {
     
     result = num1 / num2;
 
