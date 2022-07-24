@@ -10,18 +10,13 @@ public class QcalcApplication {
 		SpringApplication.run(QcalcApplication.class, args);
 		System.out.println("Starting QCalc..");
 
-		
-		StandardCalculator calc = new StandardCalculator();
+		LogicCalculator calc = new LogicCalculator();
 
-		calc.add(Double.MAX_VALUE, Double.MAX_VALUE);
-		//calc.add(Double.MAX_VALUE, 1.0);
-		//calc.subtract(-Double.MAX_VALUE, Double.MAX_VALUE);
+		//calc.OR(8, 6);
+		//calc.OR(8, 6);
+		calc.divide(20, 0);
 
 		calc.printResult();
-
-
-		//System.out.println(Double.MAX_VALUE);
-		System.out.println(calc.getResult());
 
 	}
 
